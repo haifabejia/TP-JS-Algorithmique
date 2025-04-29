@@ -10,7 +10,7 @@ function rendreLaMonnaie(montant) {
         }
     });
 
-    console.log("Monnaie à rendre :");
+    console.log(" Monnaie à rendre :");
     for (let billet in rendu) {
         console.log(`- ${rendu[billet]} x ${billet}€`);
     }
