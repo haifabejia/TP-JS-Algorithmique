@@ -6,13 +6,12 @@ function trouverNombresArmstrong() {
                 let nombre = A * 100 + B * 10 + C;
                 let sommeCubes = (A * A * A) + (B * B * B) + (C * C * C);
                 if (nombre == sommeCubes) {
-                    console.log('Trouvé : ${nombre} = ${A}³ + ${B}³ + ${C}³');
+                    console.log(` Trouvé : ${nombre} = ${A}³ + ${B}³ + ${C}³`);
                     compteur++;
                 }
             }
         }
     }
-    console.log('Nombre total de solutions trouvées : ${compteur}');
+    console.log(` Nombre total de solutions trouvées : ${compteur}`);
 }
-
 trouverNombresArmstrong();
