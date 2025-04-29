@@ -5,7 +5,7 @@ function trouverNombresArmstrong() {
             for (let C = 1; C <= 9; C++) {
                 let nombre = A * 100 + B * 10 + C;
                 let sommeCubes = (A * A * A) + (B * B * B) + (C * C * C);
-                if (nombre == sommeCubes) {
+                if (nombre === sommeCubes) {
                     console.log(` Trouvé : ${nombre} = ${A}³ + ${B}³ + ${C}³`);
                     compteur++;
                 }
