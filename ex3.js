@@ -5,7 +5,7 @@ function verifierCarteLuhn(numeroCarte) {
 
     digits.forEach(function(digit, index) {
         let num = parseInt(digit, 10);
-        if (index % 2 == 0) {
+        if (index % 2 === 0) {
             num *= 2;
             if (num > 9) num -= 9;
         }
@@ -14,14 +14,14 @@ function verifierCarteLuhn(numeroCarte) {
 
     const calculCheckDigit = (10 - (somme % 10)) % 10;
 
-    console.log(' Numéro testé : ${numeroCarte}');
-    console.log(' Chiffre de contrôle attendu : ${checkDigit}');
-    console.log('Chiffre de contrôle calculé : ${calculCheckDigit}');
+    console.log(` Numéro testé : ${numeroCarte}`);
+    console.log(` Chiffre de contrôle attendu : ${checkDigit}`);
+    console.log(` Chiffre de contrôle calculé : ${calculCheckDigit}`);
 
-    if (calculCheckDigit == checkDigit) {
+    if (calculCheckDigit === checkDigit) {
         console.log("Carte valide selon l'algorithme de Luhn");
     } else {
-        console.log("Carte non valide selon l'algorithme de Luhn");
+        console.log(" Carte non valide selon l'algorithme de Luhn");
     }
 }
 
